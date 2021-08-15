@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+body{
+    background: radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+}
+.carding{
+    width:20rem;
+}
+.carding:hover{
+    box-shadow: 5px 20px 10px 1px rgba(0, 0, 0, 0.253) !important;
+}
+.carding-body{
+    padding:3rem 0 !important;
+}
+.carding-text{
+    font-size:0.9rem;
+    padding:0.4rem 1.9rem;
+}
+.card-img-top{
+   transform: scale(1);
+   transition: transform 0.5s ease;
+}
+.card-img-top:hover{
+   transform: scale(1.2);
+}
+.overflow{
+    overflow: hidden;
+}
+.fa-star{
+    transform: scale(1);
+}
+.fa-star:hover{
+    color: rgb(206, 198, 198);
+    transform: scale(1.8);
+    transition: transform 0.2s ease;
+}
+.name {
+    position: relative;
+    display: inline-block;
+    color: rgb(10, 10, 10);
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(47, 15, 165), midnightblue 50%, rgb(13, 14, 15) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; 
+}
+.name:hover {
+    background-position: 0 100%;
+  }
+.icon{
+    transform: scale(1);
+}
+.icon:hover{
+    transform: scale(1.8);
+    transition: transform 0.4s ease;
+}
+.brand{
+    font-family: 'Langar', cursive;
+    font-size: 35px;
+}

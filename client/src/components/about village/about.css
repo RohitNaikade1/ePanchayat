@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+.carousel-caption{
+    opacity:0;
+    transition:500ms ease-in-out;
+  }
+  .carousel-item:hover .carousel-caption{
+    opacity:1;
+  }
+  .image { 
+    opacity: 1; 
+    transition:200ms ease-in-out;
+  } 
+  .brand{
+    font-family: 'Langar', cursive;
+    font-size: 35px;
+}
+  .image:hover {
+    filter: brightness(30%);
+    transition:200ms ease-in-out;
+  }

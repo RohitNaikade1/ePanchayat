@@ -1,0 +1,43 @@
+const mongoose=require('mongoose');
+const residenceSchema=new mongoose.Schema({
+    name:{
+        type:String,
+        trim:true
+    },
+    UID:{
+        type:Number,
+        trim:true
+    },
+    number:{
+        type:String,
+        trim:true
+    },
+    picture:{
+        type:String,
+        trim:true
+    },
+    filename:{
+        type:String,
+        trim:true
+    },
+    age:{
+        type:String,
+        trim:true
+    },
+    noOfYears:{
+        type:String,
+        trim:true
+    },
+    profession:{
+        type:String,
+        trim:true
+    },
+    email:{
+        type:String,
+        trim:true
+    }
+},{
+    timestamps:true
+});
+
+module.exports=mongoose.model('residence',residenceSchema);

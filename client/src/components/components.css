@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+.circle-icon {
+    background: #ffffff;
+    padding:10px;
+    border-radius: 50%;
+}
+.circle-icon:hover {
+    color:#fafafa;
+    background: #ef5350;
+    padding:10px;
+    border-radius: 50%;
+}
+.profileImg{
+    width:40px;
+    border-radius: 50%;
+    height:40px
+}
+.links{
+    color:#bdbdbd;
+    text-decoration-line: none;
+}
+.active_class{
+    color:#fafafa;
+}
+.links:hover{
+    color:#757575;
+    text-decoration-line: none;
+}
+.login_btn{
+    color:#03a9f4;
+    text-decoration-line: none;
+}
+.login_btn:hover{
+    color:#fafafa;
+    text-decoration-line: none;
+}
+.brand{
+    font-family: 'Langar', cursive;
+    font-size: 35px;
+}
+.heads{
+    font-family: 'Roboto Slab', serif;
+}

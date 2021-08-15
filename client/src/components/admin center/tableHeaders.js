@@ -1,0 +1,30 @@
+export const columns=[
+   {
+       Header:'Name',
+       accessor:'name'
+   },
+   {
+    Header:'Email',
+    accessor:'email'
+   },
+   {
+       Header:'Mobile No.',
+       accessor:'number'
+   },
+   {
+    Header:'Reason',
+    accessor:'forReason'
+   },
+   {
+    Header:'Amount',
+    accessor:'amount'
+   },
+   {
+       Header:'isPaid',
+       accessor:'isPaid'
+   },
+   {
+    Header:'OrderId',
+    accessor:'order_id'
+   }
+]
