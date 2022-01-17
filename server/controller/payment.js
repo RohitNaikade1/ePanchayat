@@ -268,7 +268,7 @@ exports.verification = (req, res) => {
                                 ]
                             })
                                 .then(sent => {
-                                    fs.unlinkSync(`${__dirname}/images/payment/${name}.pdf`);
+                                    // fs.unlinkSync(`${__dirname}/images/payment/${name}.pdf`);
                                     return res.status(200).json({
                                         message: `Your PDF has been sent to ${email}`
                                     });

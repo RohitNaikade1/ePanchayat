@@ -39,6 +39,7 @@ exports.create = (req, res) => {
                     } else {
                         file.mv(path.join(__dirname, 'images/Residence certificate', file.name), (err) => {
                             if (err) {
+                                console.log(err)
                             } else {
 
                             }
@@ -74,7 +75,7 @@ exports.reject = (req, res) => {
                 error: "User does not not exist!"
             });
         } else {
-            fs.unlinkSync(path.join(__dirname, 'images/Residence certificate', user.filename));
+            // fs.unlinkSync(path.join(__dirname, 'images/Residence certificate', user.filename));
             ResData.deleteOne({ UID: req.body.UID })
                 .then(data => {
                     sgMail.send({
@@ -143,7 +144,7 @@ exports.download = (req, res) => {
                         ]
                     })
                         .then(sent => {
-                            fs.unlinkSync(`${__dirname}/images/Residence certificate/Certificates/${req.body.name}.pdf`);
+                            // fs.unlinkSync(`${__dirname}/images/Residence certificate/Certificates/${req.body.name}.pdf`);
                             ResData.findOne({ UID: req.body.UID }, function (error, user) {
                                 if (user) {
                                     fs.unlinkSync(path.join(__dirname, 'images/Residence certificate', user.filename));

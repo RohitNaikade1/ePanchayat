@@ -145,7 +145,7 @@ exports.approve = (req, res) => {
                                             ]
                                         })
                                             .then(sent => {
-                                                fs.unlinkSync(`${__dirname}/images/Revenue tax receipt/Certificates/${req.body.name}.pdf`);
+                                                // fs.unlinkSync(`${__dirname}/images/Revenue tax receipt/Certificates/${req.body.name}.pdf`);
                                                 return res.status(200).json({
                                                     message: `Your PDF has been sent to ${req.body.email}`
                                                 });
